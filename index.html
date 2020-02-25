@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h3 class="title is-3">Rules</h3>
+
+            <p>Задача игры найти на сервере (который привязан к домену blin.host) как можно больше флагов. Флаг выглядит
+                примерно так:</p>
+            <p><code>fxO_Q4l_PtXZtYcyDA1QhsBLINVQBzwQ</code></p>
+            <p>Флаг нужно отправить на тот же сервер, через браузер. Вписать в форму свой username и флаг.</p>
+            <p>Если вы не уверены в написании своего username, то вы можете посмотреть его ниже на странице в
+                рейтинговом списке.</p>
+            <p>В рейтинговом списке есть все участники. Можно нажать на участника, чтобы посмотреть его прогресс.</p>
+            <p>Если не знаете с чего начать, то попробуйте глубже посмотреть на главной странице:)</p>
+            <p>Разрешены любые покушения на сервер, кроме проверок на нагрузку. (Они не имеют смысла, а только мешают
+                играть)</p>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <form style="padding: 3rem; background-color: #eeeeff;" class="field" method="POST" action="/submit_blin"
+                target="_blank">
+                <h3 class="title is-3">Submit blin</h3>
+                <label class="label">Username</label>
+                <div class="control">
+                    <input class="input" type="text" name='user' placeholder="Username">
+                </div>
+                <br>
+                <label class="label">Blincode</label>
+                <div class="control">
+                    <input class="input" type="text" name='blin' placeholder="Blincode">
+                </div>
+                <br>
+                <button type="submit" class="button">Submit</button>
+            </form>
+            <br>
+            <br>
+            <!-- user -->
+            <br>
+            <br>
+            <div style="padding: 3rem; background-color: #eeffee;">
+                <h3 class="title is-3">Leaderboard</h3>
+                <ol class="list is-hoverable">
+                    <!-- leaderboard -->
+                </ol>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
